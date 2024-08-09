@@ -1,0 +1,250 @@
+body {
+  background-image: linear-gradient(
+    179.7deg,
+    rgba(249, 21, 215, 1) 1.1%,
+    rgba(22, 0, 98, 1) 99%
+  );
+  height: 575px;
+}
+
+#title {
+  text-shadow: 4px 3px 1px rgba(0,0,0,0.69);
+  text-align: center;
+  width: 100px;
+  margin-left: 580px;
+  border-bottom: 2px white solid;
+  color: white;
+  font-size: 40px;
+  display: inline-block;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#title:hover {
+  transform: translateY(-5px);
+ text-shadow: 0px 4px 3px rgba(0,0,0,0.6);
+}
+
+#contenedor {
+  width: 540px;
+  height: 470px;
+  margin-left: 360px;
+  margin-top: 18px;
+  display: grid;
+  grid-template-columns: repeat(3, 3fr);
+  cursor: pointer;
+}
+
+#cubo1 {
+  width: 150px;
+  height: 140px;
+  margin-bottom: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo2 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo3 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo4 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo5 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo6 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo7 {
+  width: 150px;
+  height: 140px;
+  margin-top: 10px;
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo8 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#cubo9 {
+  width: 150px;
+  height: 140px;
+  margin-left: 10px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px rgb(255, 255, 255);
+  font-size: 70px;
+  color: white;
+}
+
+#btn {
+  background-color: #e413cc;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  transition: box-shadow 0.3s ease;
+  border-radius: 5px;
+  position: relative;
+  margin-left: 570px;
+  cursor: pointer;
+}
+
+#btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.2);
+  transition: opacity 0.3s ease;
+  opacity: 0;
+}
+
+#btn:hover::after {
+  opacity: 1;
+}
+
+#btn:hover {
+  box-shadow: 0 0 20px #e413cc, 0 0 30px #ff00e1, 0 0 40px #8c0d7d;
+}
+
+#winner {
+  position: absolute;
+  bottom: 50%;
+  left: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+#empate {
+  position: absolute;
+  bottom: 50%;
+  left: 50px;
+  font-size: 30px;
+  color: white;
+}
+
+#contadorHumano {
+  border: 1.5px solid white;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+#contadorBot {
+  border: 1.5px solid white;
+  width: 50px;
+  height: 50px;
+  display: grid;
+  place-items: center;
+  margin-bottom: 20px;
+  color: white;
+}
+
+.texto {
+  width: 25px;
+  height: 20px;
+  margin-right: 80px;
+  margin-bottom: 25px;
+  display: grid;
+  place-items: center;
+  margin-top: 5px;
+  color: white;
+  border-bottom: 1.5px solid white;
+}
+
+#info {
+  position: absolute;
+  left: 1050px;
+  bottom: 50%;
+  width: 200px;
+  height: 100px;
+  display: grid;
+  place-items: center;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+#mostrarTurno {
+  position: absolute;
+  bottom: 20px;
+  left: 85%;
+  font-size: 25px;
+  color: white;
+}
